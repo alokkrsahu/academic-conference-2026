@@ -1,0 +1,76 @@
+
+[
+  {
+    "model": "conference.event",
+    "pk": 1,
+    "fields": {
+      "title": "Academic Conference 2026",
+      "subtitle": "Interdisciplinary Research and Innovation",
+      "description": "Three days of talks, posters, and workshops exploring the future of academic research.",
+      "start_date": "2026-06-15",
+      "end_date": "2026-06-17",
+      "location": "University of Example, Example City",
+      "address": "1 Example Road, Example City, EX1 1EX",
+      "contact_email": "info@academic2026.example"
+    }
+  },
+  {
+    "model": "conference.room",
+    "pk": 1,
+    "fields": { "name": "Hall A", "capacity": 250, "location_notes": "Main Building, 1st Floor" }
+  },
+  {
+    "model": "conference.room",
+    "pk": 2,
+    "fields": { "name": "Hall B", "capacity": 120, "location_notes": "North Wing, Ground Floor" }
+  },
+  {
+    "model": "conference.room",
+    "pk": 3,
+    "fields": { "name": "Room 101", "capacity": 40, "location_notes": "Basement Lab Area" }
+  },
+  {
+    "model": "conference.speaker",
+    "pk": 1,
+    "fields": {
+      "first_name": "Alice", "last_name": "Marshall", "display_name": "Dr. Alice Marshall",
+      "title": "Professor of Cybernetics", "affiliation": "University of Example",
+      "bio": "Expert in human-machine interaction and robotic control systems.",
+      "email": "alice@example.edu"
+    }
+  },
+  {
+    "model": "conference.speaker",
+    "pk": 2,
+    "fields": {
+      "first_name": "Ben", "last_name": "O'Connor", "display_name": "Prof. Ben O'Connor",
+      "title": "Professor of Data Science", "affiliation": "Example Institute",
+      "bio": "Leading researcher in big data analytics and statistical modeling.",
+      "email": "ben@example.org"
+    }
+  },
+  {
+    "model": "conference.session",
+    "pk": 1,
+    "fields": {
+      "title": "Opening Keynote: The Future of Interdisciplinary Research",
+      "abstract": "A deep dive into how collaborative efforts across domains are shaping our world.",
+      "start_time": "2026-06-15T09:30:00Z",
+      "end_time": "2026-06-15T10:30:00Z",
+      "room": 1, "is_keynote": true, "track": "General",
+      "speakers": [1]
+    }
+  },
+  {
+    "model": "conference.session",
+    "pk": 2,
+    "fields": {
+      "title": "Machine Learning in Social Science",
+      "abstract": "Discussing the ethics and applications of ML in studying human behavior.",
+      "start_time": "2026-06-15T11:00:00Z",
+      "end_time": "2026-06-15T12:00:00Z",
+      "room": 2, "is_keynote": false, "track": "AI & Society",
+      "speakers": [2]
+    }
+  }
+]

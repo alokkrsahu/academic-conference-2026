@@ -1,0 +1,5 @@
+{
+  "name": "Academic Conference 2026",
+  "description": "A comprehensive full-stack application for managing an academic conference, featuring event details, speaker profiles, a session schedule, and registration forms.",
+  "requestFramePermissions": []
+}

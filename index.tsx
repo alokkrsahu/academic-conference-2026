@@ -1,0 +1,2 @@
+
+import './frontend/index.tsx';
